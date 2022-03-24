@@ -1,27 +1,355 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>Braxton Massengale's CV</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <a href="#introduction" class="navbar__brand-link"
+                    >Braxton Massengale</a
+                >
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="#introduction" class="navbar__link"
+                        >Introduction</a
+                    >
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#skills" class="navbar__link">Skills</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#experience" class="navbar__link">Experience</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#education" class="navbar__link">Education</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#contact" class="navbar__link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section id="introduction" class="section">
+                <h1 class="section__headline">
+                    Hi, I'm Braxton Massengale, a software engineer / full stack
+                    web developer
+                </h1>
+                <p class="section__sub">
+                    My goal is to create valuable and accesible software that
+                    delivers a top notch user experience.
+                </p>
+                <ul class="section__contact">
+                    <li class="section__contact-item">
+                        <a href="#contact" class="section____contact-link"
+                            ><i class="fa fa-envelope fa-2x section__icon"></i
+                        ></a>
+                    </li>
+                    <li class="section__contact-item">
+                        <a
+                            href="https://www.linkedin.com/in/braxtonmassengale/"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-linkedin fa-2x section__icon"></i
+                        ></a>
+                    </li>
+                    <li class="section__contact-item">
+                        <a
+                            href="https://twitter.com/BraxMassengale"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-twitter fa-2x section__icon"></i
+                        ></a>
+                    </li>
+                    <li class="section__contact-item">
+                        <a
+                            href="https://github.com/BraxMassengale"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-github fa-2x section__icon"></i
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills" class="section">
+                <h2>
+                    These are the technologies and methodologies that I work
+                    with:
+                </h2>
+                <div class="section__card-group">
+                    <div class="section__card">
+                        <h3>Languages and Frameworks</h3>
+                        <ul
+                            id="languages-and-frameworks-list"
+                            class="section__list"
+                        >
+                            <li>Java and Spring</li>
+                            <li>Typescript/Javascript and Angular</li>
+                            <li>PHP and Laravel</li>
+                            <li>Node.js</li>
+                            <li>Semantic HTML</li>
+                            <li>CSS3 and SASS</li>
+                        </ul>
+                    </div>
+                    <div class="section__card">
+                        <h3>Other Tools</h3>
+                        <ul id="other-tools-list" class="section__list">
+                            <li>Version control with Git</li>
+                            <li>
+                                Agile methodology and use of issue tracking
+                                software such as Jira
+                            </li>
+                            <li>CD/CI with Jenkins</li>
+                            <li>Database manipulation with SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="section">
+                <h2>Work Experience</h2>
+                <div class="section__block-group">
+                    <div class="section__block">
+                        <h3>Business & Integration Architecture Associate</h3>
+                        <div>
+                            <p>Accenture</p>
+                            <p>January 2022 - Current</p>
+                        </div>
+                        <ul class="section__list">
+                            <li>
+                                Development and maintenance of microservices
+                                using Java and the Spring framework
+                            </li>
+                            <li>
+                                Alignment of application design and
+                                functionality with business objectives
+                            </li>
+                            <li>
+                                Conducting software analysis, programming,
+                                testing, and debugging
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__block">
+                        <h3>Test Engineering Associate</h3>
+                        <div>
+                            <p>Accenture</p>
+                            <p>July 2021 - January 2022</p>
+                        </div>
+                        <ul class="section__list">
+                            <li>
+                                Estimation, prioritization, planning and
+                                coordination testing activities
+                            </li>
+                            <li>
+                                Automation of regression tests using Visual
+                                Basic scripts and UFT
+                            </li>
+                            <li>
+                                Investigation of shortcomings in the software
+                                testing strategy of various teams
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__block">
+                        <h3>Software Engineering Intern</h3>
+                        <div>
+                            <p>Accenture</p>
+                            <p>July 2020 - July 2021</p>
+                        </div>
+                        <ul class="section__list">
+                            <li>
+                                Worked in an agile development team managing the
+                                consumer website of a well-known company in the
+                                energy sector with a Java back-end and Angular
+                                on the front-end
+                            </li>
+                            <li>
+                                Creation of detailed functional and technical
+                                design documentation using UML standards and
+                                Enterprise Architect
+                            </li>
+                            <li>
+                                Manual testing of multiple aspects of the
+                                product
+                            </li>
+                            <li>
+                                Documentation of internal quality control
+                                proceses
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__block">
+                        <h3>English Teacher</h3>
+                        <div>
+                            <p>Bilbao School of English</p>
+                            <p>October 2018 - Aug 2020</p>
+                        </div>
+                        <ul class="section__list">
+                            <li>
+                                Creation and maintenance of an online platform
+                                for grammar and vocabulary exercises. The
+                                platform was created using technologies like
+                                Wordpress and various plugins like LearnDash
+                                LMS.
+                            </li>
+                            <li>
+                                Creation of informative content for social
+                                networks (grammar explanation videos, etc.)
+                            </li>
+                            <li>
+                                Teaching English to students of a variety of
+                                ages from 7 years old to seniors
+                            </li>
+                            <li>
+                                Textbook revision (correction of grammar,
+                                spelling errors, etc.)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="section__block-group">
+                    <div class="section__block">
+                        <h3>Master's in Web Application Development</h3>
+                        <div>
+                            <p>Universitat Oberta de Catalunya</p>
+                            <p>
+                                September 2021 - Expected Graduation in June
+                                2022
+                            </p>
+                        </div>
+                        <p>
+                            This master's course in Web Application Development
+                            includes topics in programming for the web both in
+                            the back-end and the front-end. Subjects discussed
+                            in this course include the creation and maintance of
+                            modern workflows and production environments for
+                            creating web based applications, use of modern HTML
+                            and CSS and related tools to create responsive and
+                            performant applications, the use of front-end
+                            frameworks such as Angular to create complex single
+                            page applications, and back-end frameworks and PHP
+                            libraries such as Laravel, CodeIgniter and Drupal.
+                        </p>
+                    </div>
+                    <div class="section__block">
+                        <h3>
+                            Bachelor's of Science in Computer Information
+                            Technology
+                        </h3>
+                        <div>
+                            <p>Northern Arizona University</p>
+                            <p>August 2017 - May 2020</p>
+                        </div>
+                        <p>
+                            This Bachelor of Science in Computer Information
+                            Technology course includes courses from a broad
+                            range of infomation technology fields. Subjects
+                            discussed include foundations of information
+                            technology and the web, data management and
+                            administration, business operations in the IT field,
+                            infomation security, systems administration, and
+                            software development.
+                        </p>
+                    </div>
+                    <div class="section__block">
+                        <h3>Associate's of Arts in Spanish</h3>
+                        <div>
+                            <p>Tulsa Community College</p>
+                            <p>August 2014 - May 2016</p>
+                        </div>
+                        <p>
+                            This Associate's of Arts in Spanish Language course
+                            includes various topcis related to the acquisition
+                            of written and oral fluency of the Spanish language
+                            as well as the culture of Spanish speaking
+                            countries.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <h2>Want to get in touch? Here's how you can contact me:</h2>
+                <ul class="section__contact">
+                    <li class="section__contact-item">
+                        <a
+                            href="https://www.linkedin.com/in/braxtonmassengale/"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-linkedin fa-4x section__icon"></i
+                        ></a>
+                    </li>
+                    <li class="section__contact-item">
+                        <a
+                            href="https://twitter.com/BraxMassengale"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-twitter fa-4x section__icon"></i
+                        ></a>
+                    </li>
+                    <li class="section__contact-item">
+                        <a
+                            href="https://github.com/BraxMassengale"
+                            class="section____contact-link"
+                            target="_blank"
+                            ><i class="fa fa-github fa-4x section__icon"></i
+                        ></a>
+                    </li>
+                </ul>
+                <form
+                    action="mailto:braxtonmassengale@icloud.com"
+                    name="email-form"
+                    id="email-form"
+                    method="post"
+                    enctype="text/plain"
+                    class="section__form"
+                >
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        class="section__form-input"
+                    /><br />
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        name="email"
+                        class="section__form-input"
+                    /><br />
+                    <label for="message"> Message</label>
+                    <textarea
+                        name="message"
+                        form="email-form"
+                        cols="86"
+                        rows="20"
+                        class="section__form-input"
+                        placeholder="Please write your message here..."
+                    ></textarea>
+                    <div class="section__card-group">
+                        <button type="submit" class="section__button">
+                            Send
+                        </button>
+                        <button type="reset" class="section__button">
+                            Reset
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
